@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Privacy Policy for Relationship Linewise, a private, offline, local-first mobile application."
+  >
+
+  <meta name="theme-color" content="#287b76">
+  <meta name="color-scheme" content="light">
+
+  <title>Relationship Linewise Privacy Policy</title>
+
+  <style>
+    :root {
+      --background: #fcf9f8;
+      --surface: #ffffff;
+      --surface-muted: #f0eded;
+      --text: #1b1c1c;
+      --text-muted: #54555f;
+      --primary: #287b76;
+      --primary-dark: #1a5c56;
+      --primary-soft: #e6f0ee;
+      --border: #d8d5d4;
+      --warning-bg: #fff4e8;
+      --warning-border: #e6c6a6;
+      --warning-text: #6e3900;
+      --shadow: 0 10px 30px rgba(27, 28, 28, 0.06);
+      --radius-large: 20px;
+      --radius-medium: 12px;
+      --content-width: 860px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: clamp(32px, 6vw, 48px);
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 25px;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul {
+      margin: 10px 0 18px;
+      padding-left: 24px;
+    }
+
+    li + li {
+      margin-top: 7px;
+    }
+
+    .page {
+      width: min(100% - 32px, var(--content-width));
+      margin: 0 auto;
+      padding: 36px 0 72px;
+    }
+
+    .hero {
+      padding: 34px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-large);
+      box-shadow: var(--shadow);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 750;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      position: relative;
+      width: 34px;
+      height: 34px;
+      flex: 0 0 auto;
+      background: var(--primary);
+      border-radius: 11px;
+    }
+
+    .brand-mark::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      width: 18px;
+      height: 14px;
+      background: #ffffff;
+      border-radius: 6px;
+    }
+
+    .brand-mark::after {
+      content: "Ⅱ";
+      position: absolute;
+      top: 4px;
+      left: 12px;
+      color: var(--primary);
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: -3px;
+    }
+
+    .subtitle {
+      max-width: 700px;
+      margin-bottom: 20px;
+      color: var(--text-muted);
+      font-size: 18px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .summary-card {
+      min-height: 112px;
+      padding: 18px;
+      background: var(--primary-soft);
+      border: 1px solid #cdddc9;
+      border-radius: var(--radius-medium);
+    }
+
+    .summary-card strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--primary-dark);
+      font-size: 16px;
+    }
+
+    .summary-card span {
+      color: #3f5540;
+      font-size: 14px;
+    }
+
+    .toc,
+    section {
+      margin-top: 24px;
+      padding: 28px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-large);
+    }
+
+    .toc ol {
+      columns: 2;
+      column-gap: 40px;
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .toc li {
+      break-inside: avoid;
+      margin: 6px 0;
+    }
+
+    .notice {
+      margin: 18px 0;
+      padding: 16px 18px;
+      background: var(--warning-bg);
+      color: var(--warning-text);
+      border: 1px solid var(--warning-border);
+      border-radius: var(--radius-medium);
+    }
+
+    .data-table {
+      width: 100%;
+      margin: 16px 0 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: var(--radius-medium);
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 14px 16px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .data-table th {
+      background: var(--surface-muted);
+      font-size: 14px;
+    }
+
+    .data-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .footer {
+      padding: 30px 8px 0;
+      color: var(--text-muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer strong {
+      color: var(--text);
+    }
+
+    @media (max-width: 680px) {
+      .page {
+        width: min(100% - 22px, var(--content-width));
+        padding-top: 14px;
+      }
+
+      .hero,
+      .toc,
+      section {
+        padding: 22px;
+        border-radius: 16px;
+      }
+
+      .summary {
+        grid-template-columns: 1fr;
+      }
+
+      .toc ol {
+        columns: 1;
+      }
+
+      .data-table,
+      .data-table tbody,
+      .data-table tr,
+      .data-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .data-table thead {
+        display: none;
+      }
+
+      .data-table tr {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .data-table tr:last-child {
+        border-bottom: 0;
+      }
+
+      .data-table td {
+        padding: 5px 14px;
+        border: 0;
+      }
+
+      .data-table td::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 2px;
+        color: var(--text-muted);
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .page {
+        width: 100%;
+        padding: 0;
+      }
+
+      .hero,
+      .toc,
+      section {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header class="hero">
+
+      <h1>Privacy Policy</h1>
+
+      <p class="subtitle">
+        Relationship Linewise is designed as a private, offline, local-first
+        mobile application. This Privacy Policy explains what information the
+        app handles, where that information is stored, and the choices
+        available to you.
+      </p>
+
+      <div class="meta">
+        <span>
+          <strong>Effective date:</strong>
+          July 21, 2026
+        </span>
+
+        <span>
+          <strong>Last updated:</strong>
+          July 21, 2026
+        </span>
+      </div>
+
+      <div class="summary" aria-label="Privacy summary">
+        <div class="summary-card">
+          <strong>No account required</strong>
+          <span>
+            Relationship Linewise does not require registration, a user
+            profile, or a login.
+          </span>
+        </div>
+
+        <div class="summary-card">
+          <strong>No cloud sync</strong>
+          <span>
+            Your scenes, boundary maps, and rehearsal drafts are not sent
+            to us or to any remote server.
+          </span>
+        </div>
+
+        <div class="summary-card">
+          <strong>Local storage</strong>
+          <span>
+            App content is stored on your device until you delete it or
+            clear the app's data.
+          </span>
+        </div>
+
+        <div class="summary-card">
+          <strong>No ads or tracking SDKs</strong>
+          <span>
+            Relationship Linewise does not use advertising or third-party
+            analytics SDKs.
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Table of contents">
+      <h2>Contents</h2>
+
+      <ol>
+        <li><a href="#scope">Scope</a></li>
+        <li>
+          <a href="#information">
+            Information handled by Relationship Linewise
+          </a>
+        </li>
+        <li>
+          <a href="#not-collected">
+            Information we do not collect
+          </a>
+        </li>
+        <li>
+          <a href="#local-storage">
+            Local storage and retention
+          </a>
+        </li>
+        <li><a href="#backup">Backup and restore</a></li>
+        <li>
+          <a href="#privacy-mode">
+            Privacy mode
+          </a>
+        </li>
+        <li>
+          <a href="#multiple-scenes">
+            Multiple saved scenes
+          </a>
+        </li>
+        <li>
+          <a href="#multilingual">
+            Multilingual support
+          </a>
+        </li>
+        <li><a href="#deletion">Deleting your data</a></li>
+        <li>
+          <a href="#stores">
+            Apple and Google services
+          </a>
+        </li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li>
+          <a href="#changes">
+            Changes to this Privacy Policy
+          </a>
+        </li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </nav>
+
+    <section id="scope">
+      <h2>1. Scope</h2>
+
+      <p>
+        This Privacy Policy applies to the Relationship Linewise mobile
+        application for Android and iOS and to privacy-related information
+        presented through relationshiplinewise.com.
+      </p>
+
+      <p>
+        In this policy, "Relationship Linewise," "we," "us," and "our" refer
+        to the developer and publisher of the Relationship Linewise
+        application.
+      </p>
+    </section>
+
+    <section id="information">
+      <h2>2. Information handled by Relationship Linewise</h2>
+
+      <p>
+        Relationship Linewise allows you to create and manage information
+        such as the following:
+      </p>
+
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Type of information</th>
+            <th>Purpose</th>
+            <th>Where it is stored</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td data-label="Type">
+              Scene maps with actors and relation lines
+            </td>
+
+            <td data-label="Purpose">
+              To visualise who is involved in a situation and how they are
+              connected.
+            </td>
+
+            <td data-label="Storage">
+              Locally on your device.
+            </td>
+          </tr>
+
+          <tr>
+            <td data-label="Type">
+              Boundary problem details (events, breakdown cards, action plans)
+            </td>
+
+            <td data-label="Purpose">
+              To help you analyse a specific issue, rehearse a conversation,
+              and plan next steps.
+            </td>
+
+            <td data-label="Storage">
+              Locally on your device.
+            </td>
+          </tr>
+
+          <tr>
+            <td data-label="Type">
+              Rehearsal drafts and conversation scripts
+            </td>
+
+            <td data-label="Purpose">
+              To let you practise what you might say before having the real
+              conversation.
+            </td>
+
+            <td data-label="Storage">
+              Locally on your device.
+            </td>
+          </tr>
+
+          <tr>
+            <td data-label="Type">
+              Saved scenes and scene history
+            </td>
+
+            <td data-label="Purpose">
+              To keep your previous work available for later review.
+            </td>
+
+            <td data-label="Storage">
+              Locally on your device.
+            </td>
+          </tr>
+
+          <tr>
+            <td data-label="Type">
+              App preferences (language, avatar choices, privacy mode)
+            </td>
+
+            <td data-label="Purpose">
+              To remember your personal settings and customisations.
+            </td>
+
+            <td data-label="Storage">
+              Locally on your device.
+            </td>
+          </tr>
+
+          <tr>
+            <td data-label="Type">
+              Custom avatars and avatar preferences
+            </td>
+
+            <td data-label="Purpose">
+              To display personalised portraits for people in your scenes.
+            </td>
+
+            <td data-label="Storage">
+              Locally on your device.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        This information is used only to provide the app's local features.
+        Relationship Linewise does not operate a server that receives or
+        stores this content.
+      </p>
+    </section>
+
+    <section id="not-collected">
+      <h2>3. Information we do not collect</h2>
+
+      <p>
+        In the current version of Relationship Linewise, we do not collect
+        or transmit:
+      </p>
+
+      <ul>
+        <li>
+          Your scene maps, boundary problems, rehearsal drafts, or action
+          plans.
+        </li>
+
+        <li>
+          Your name, email address, phone number, or account credentials.
+        </li>
+
+        <li>
+          Your contacts, call history, SMS messages, or messaging-app
+          content.
+        </li>
+
+        <li>
+          Your precise or approximate location.
+        </li>
+
+        <li>
+          Your photos, microphone recordings, camera data, or media library.
+        </li>
+
+        <li>
+          Your social-media accounts, profiles, stories, last-seen status,
+          or activity.
+        </li>
+
+        <li>
+          Advertising identifiers for targeted advertising.
+        </li>
+
+        <li>
+          Health, medical, diagnostic, or therapy records.
+        </li>
+      </ul>
+
+      <p>
+        Relationship Linewise does not use advertising SDKs, third-party
+        analytics SDKs, AI processing services, social-login services, or
+        cloud-sync services.
+      </p>
+    </section>
+
+    <section id="local-storage">
+      <h2>4. Local storage and retention</h2>
+
+      <p>
+        Information created in Relationship Linewise is stored locally on
+        your device. We cannot view, retrieve, recover, or remotely delete
+        this information because it is not uploaded to us.
+      </p>
+
+      <p>
+        Local information remains on your device until you delete it within
+        the app, clear the app's storage through your device settings, or
+        uninstall the app.
+      </p>
+
+      <p>
+        Device backups may include application data depending on your
+        operating-system and backup settings. Those backups are controlled
+        by you and the relevant platform provider.
+      </p>
+    </section>
+
+    <section id="backup">
+      <h2>5. Backup and restore</h2>
+
+      <p>
+        Relationship Linewise includes a built-in backup and restore
+        function so you can save and recover your local data between
+        installations or device changes.
+      </p>
+
+      <p>
+        Backup files contain only your own locally stored app content such
+        as saved scenes, boundary problem details, and preferences. The
+        backup file is managed entirely by you.
+      </p>
+
+      <div class="notice">
+        When you restore a backup, the backup file replaces your current
+        local data with the content it contains. Be careful not to merge
+        incompatible backup versions.
+      </div>
+
+      <p>
+        If you share a backup file with someone else, they will be able to
+        read the private scenes and boundary problem details it contains.
+        Treat backup files as confidential.
+      </p>
+    </section>
+
+    <section id="privacy-mode">
+      <h2>6. Privacy mode</h2>
+
+      <p>
+        Relationship Linewise offers a privacy mode that hides the titles
+        and previews of your saved scenes from the home screen. This helps
+        keep your relationship-related work discreet when others might see
+        your device.
+      </p>
+
+      <p>
+        Enabling privacy mode only obscures the displayed text. The actual
+        scene content remains fully accessible inside the app when you
+        choose to view it.
+      </p>
+    </section>
+
+    <section id="multiple-scenes">
+      <h2>7. Multiple saved scenes</h2>
+
+      <p>
+        You can save multiple independent scenes for later review. Each
+        saved scene preserves its title, actors, relations, boundary
+        problems, and action plans exactly as you left them.
+      </p>
+
+      <p>
+        Saved scenes can be renamed, duplicated, or deleted at any time
+        from within the app. Deleting a scene removes only that specific
+        scene from your local storage.
+      </p>
+    </section>
+
+    <section id="multilingual">
+      <h2>8. Multilingual support</h2>
+
+      <p>
+        Relationship Linewise is available in several languages including
+        English, Arabic, German, Spanish, French, Japanese, Simplified
+        Chinese, and Traditional Chinese.
+      </p>
+
+      <p>
+        Your language preference is stored locally on your device and is
+        used only to display interface text in your preferred language.
+      </p>
+    </section>
+
+    <section id="deletion">
+      <h2>9. Deleting your data</h2>
+
+      <p>
+        You can delete individual saved scenes from within the app.
+      </p>
+
+      <p>
+        You can also use the app's "Delete all data" function (available
+        in Settings) to remove all locally stored Relationship Linewise
+        content and preferences.
+      </p>
+
+      <p>
+        You may additionally delete local app data through your device
+        settings or by uninstalling Relationship Linewise.
+      </p>
+
+      <p>
+        Because we do not maintain user accounts or a remote database of
+        app content, there is no server-side account or content deletion
+        request to submit to us.
+      </p>
+    </section>
+
+    <section id="stores">
+      <h2>10. Apple App Store and Google Play services</h2>
+
+      <p>
+        Apple and Google independently process information related to:
+      </p>
+
+      <ul>
+        <li>App discovery and store browsing.</li>
+        <li>App purchase and payment processing.</li>
+        <li>Installation and updates.</li>
+        <li>Store accounts and device compatibility.</li>
+        <li>Fraud prevention and refunds.</li>
+        <li>Platform diagnostics and store performance.</li>
+      </ul>
+
+      <p>
+        Relationship Linewise does not receive your full payment-card
+        details.
+      </p>
+
+      <p>
+        We may receive sales, transaction, installation, or diagnostic
+        information that Apple or Google makes available to developers
+        through their developer dashboards.
+      </p>
+
+      <p>
+        This platform information does not include the private scenes,
+        boundary problems, or rehearsal drafts you create inside
+        Relationship Linewise.
+      </p>
+
+      <p>
+        The platform providers' own privacy policies apply to their
+        processing:
+      </p>
+
+      <ul>
+        <li>
+          <a
+            href="https://www.apple.com/legal/privacy/"
+            rel="noopener noreferrer"
+          >
+            Apple Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://policies.google.com/privacy"
+            rel="noopener noreferrer"
+          >
+            Google Privacy Policy
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="security">
+      <h2>11. Security</h2>
+
+      <p>
+        Relationship Linewise is designed to minimize privacy risk by
+        keeping sensitive app content on your device and by avoiding
+        unnecessary accounts, servers, advertising, tracking, and external
+        content-processing services.
+      </p>
+
+      <p>
+        The protection of locally stored information also depends on your:
+      </p>
+
+      <ul>
+        <li>Device security.</li>
+        <li>Operating-system security.</li>
+        <li>Screen lock and passcode.</li>
+        <li>Device backup settings.</li>
+        <li>Handling of exported or copied information.</li>
+      </ul>
+
+      <p>
+        No storage method or device can be guaranteed to be completely
+        secure, especially if a device is lost, shared, compromised, or
+        unlocked by another person.
+      </p>
+
+      <p>
+        We recommend using a device passcode and enabling privacy mode in
+        Relationship Linewise when appropriate.
+      </p>
+    </section>
+
+    <section id="children">
+      <h2>12. Children's privacy</h2>
+
+      <p>
+        Relationship Linewise is intended for adults and is not designed
+        or directed toward children under 18.
+      </p>
+
+      <p>
+        We do not knowingly collect personal information from children.
+      </p>
+
+      <p>
+        If you believe a child has provided information to us outside the
+        app, please contact us using the details below.
+      </p>
+    </section>
+
+    <section id="safety">
+      <h2>13. Safety and scope</h2>
+
+      <p>
+        Relationship Linewise is a relationship communication and boundary
+        exercise tool. It is not:
+      </p>
+
+      <ul>
+        <li>Therapy.</li>
+        <li>Medical advice.</li>
+        <li>Legal advice.</li>
+        <li>Crisis support.</li>
+        <li>A diagnostic service.</li>
+        <li>A relationship counselling service.</li>
+      </ul>
+
+      <p>
+        Relationship Linewise does not predict another person's feelings
+        or behaviour and does not make decisions for you.
+      </p>
+
+      <p>
+        If you are in immediate danger, may harm yourself or another person,
+        or are experiencing abuse, coercion, stalking, or threats, contact
+        local emergency services or an appropriate qualified professional
+        support service.
+      </p>
+    </section>
+
+    <section id="changes">
+      <h2>14. Changes to this Privacy Policy</h2>
+
+      <p>
+        We may update this Privacy Policy if Relationship Linewise features,
+        technology, legal obligations, or data practices change.
+      </p>
+
+      <p>
+        The updated version will be posted on this page with a revised
+        "Last updated" date.
+      </p>
+
+      <p>
+        If a future version introduces accounts, cloud sync, advertising,
+        analytics, AI processing, remote crash reporting, or any other
+        transfer of user data, this Privacy Policy and the relevant Apple
+        App Store and Google Play privacy disclosures will be updated to
+        reflect those changes.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>15. Contact us</h2>
+
+      <p>
+        For privacy questions, requests, or concerns related to
+        Relationship Linewise, contact:
+      </p>
+
+      <p>
+        <strong>Relationship Linewise Privacy Contact</strong>
+        <br>
+
+        Email:
+        <a href="mailto:support@relationshiplinewise.com">
+          support@relationshiplinewise.com
+        </a>
+        <br>
+
+        Website:
+        <a
+          href="https://relationshiplinewise.com"
+          rel="noopener noreferrer"
+        >
+          relationshiplinewise.com
+        </a>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>
+        <strong>Relationship Linewise</strong>
+        <br>
+        Private by design. No account. No cloud sync. No message upload.
+      </p>
+
+      <p>
+        &copy; 2026 Relationship Linewise. All rights reserved.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
